@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="100dp"
+                android:src="@drawable/icon"
+                android:layout_height="100dp"
+                android:background="@null"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:layout_below="@id/img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Editor photo"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_choose"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button_shape"
+                android:text="Choose Photo"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:textColor="#0288D1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_edited"
+                android:layout_width="300dp"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_choose"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_shape"
+                android:text="Edited Photo"
+                android:textAllCaps="false"
+                android:textColor="#0288D1" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>
