@@ -1,2 +1,2 @@
+rootProject.name = "Editor Photo"
 include ':app'
-rootProject.name = "AppTruyenOnline"
